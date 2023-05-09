@@ -49,7 +49,7 @@ m_high, _ = X_high.shape
 
 file_chahe = defaultdict(dict)
 
-save_img_path = r'static\photo'
+save_img_path = r'static/photo'
 move_img_path = r'img_store'
 
 @bp.route("/")
@@ -96,12 +96,12 @@ def check_file(file_name):
 
 @bp.route("/yolo/<img_name>")
 def yolo(img_name):
-    weights=r'demo_data\model_files\yolov5s_best.pt'
-    data=r'demo_data\blade.yaml'
+    weights=r'demo_data/model_files/yolov5s_best.pt'
+    data=r'demo_data/blade.yaml'
     model = detect.load_model(weights, data, '')
     img_path, _ = detect.run(
         model,
-        os.path.join(r'static\photo', img_name),  # file/dir/URL/glob/screen/0(webcam)
+        os.path.join(r'static/photo', img_name),  # file/dir/URL/glob/screen/0(webcam)
         os.path.join('static'),  # save results to project/name
         imgsz=(640, 640),  # inference size (height, width)
         conf_thres=0.25,  # confidence threshold

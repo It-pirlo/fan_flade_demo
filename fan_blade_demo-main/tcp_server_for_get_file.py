@@ -68,7 +68,7 @@ def trans_data(key, client_socket):
 if __name__ == '__main__':
      
     parser = argparse.ArgumentParser()
-    parser.add_argument('--save_img_path', type=str, default=r'static\photo', help="")
+    parser.add_argument('--save_img_path', type=str, default=r'static/photo', help="")
     parser.add_argument('--log_path', type=str, default='logs', help="")
     parser.add_argument('--server_url', type=str, default='127.0.0.1', help="")
     parser.add_argument('--server_port', type=int, default='3333', help="")

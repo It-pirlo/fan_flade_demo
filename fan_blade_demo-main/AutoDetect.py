@@ -47,7 +47,7 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--inteval', type=int, default="5", help="")
     parser.add_argument('--log_path', type=str, default='logs', help='')
-    parser.add_argument('--weights', nargs='+', type=str, default=r'demo_data\model_files\yolov5s_best.pt', help='model path or triton URL')
+    parser.add_argument('--weights', nargs='+', type=str, default=r'demo_data/model_files/yolov5s_best.pt', help='model path or triton URL')
     parser.add_argument('--source', type=str, default=os.path.join('static', 'photo'), help='file/dir/URL/glob/screen/0(webcam)')
     parser.add_argument('--project', default=os.path.join('static'), help='save results to project/name')
     parser.add_argument('--data', type=str, default=r'demo_data\blade.yaml', help='(optional) dataset.yaml path')

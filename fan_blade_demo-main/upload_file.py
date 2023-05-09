@@ -134,7 +134,7 @@ def async_send_data_by_http(chunk_data, params, callback=None, *args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--file_path', type=str, default=r'demo_data\datas\images\0006.jpg', help="文件路径")
+    parser.add_argument('--file_path', type=str, default=r'demo_data/datas/images/0006.jpg', help="文件路径")
     parser.add_argument('--log_path', type=str, default='logs', help="日志保存文件夹路径")
     parser.add_argument('--proto_type', type=str, default='HTTP', help="协议类型：HTTP、TCP(default)")
     parser.add_argument('--tcp_server_ip', type=str, help="TCPSERVER IP，当proto_type=TCP时填写")
